@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro Usuarios</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body id="registro">
+	<section>
+		<nav id="horizontal_navbar">
+			<img id="landing_logo" src="img/landing_logo.jpg">
+			
+		</nav>
+	</section>
+	<br><br><br>
+	<div id="titulo_registro">CALZADO INDUSTRIAL MAFECAR VALRAM<br><br>Crea una cuenta </div>
+	<div id="contenedor_registro">
+	<form id="form_nuevo_usuario" onkeydown="return event.key != 'Enter';" action="" method="" target="request">
+		<fieldset>
+			<legend>Usuario</legend>
+				<input id="dato_nombre_usuario" type="text" onchange="validar_nombre_usuario(value)">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Edad</legend>
+				<input id="dato_edad_usuario" type="text" onchange="validar_edad_usuario(value)">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Contraseña</legend>
+			<input id="dato_contrasena" type="password" onchange="validar_contrasena(value)">
+		</fieldset>
+		<br><br>
+		<button id="enviar_registro" onclick="agregarRegistro()">Registar</button>
+	</form>
+</div>
+<hr/>
+	<iframe id="request"></iframe>
+    <div id="imprime_arreglo">
+       hello world! 
+    </div>
+<script type="text/javascript" src="js/validacionesLuisV.js"></script>
+</body>
+</html>

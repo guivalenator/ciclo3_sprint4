@@ -1,0 +1,279 @@
+body{
+	background-color: gray;
+}
+.horizontal_navbar {
+	position: relative;
+    background: skyblue;
+    top: 0%;
+    width: 100%;
+	height: 4%;
+    border: 3px;
+    
+}
+nav{
+	display: flex;
+}
+
+#header_container{
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
+}
+.header_search{
+	background-color: brown;
+	text-align: right;
+	margin-right: 30px;
+}
+#header_footer{
+	display: flex;
+}
+
+.header_logo{
+	border: 10px;
+	margin: 16px 0;
+	margin: 1rem 0;
+	position: relative;
+	z-index: 1;
+
+}
+.header_row{
+	display: flex;
+	
+}
+#header .header_menu_column{
+	display: flex;
+	/*align-self: stretch;*/
+	/*align-items: center;*/
+	/*flex-grow: 1;*/
+}
+nav > ul >li >a {
+	display: inline-flex;
+	align-items: center;
+	text-transform: uppercase;
+	text-transform: uppercase;
+
+}
+
+.menu_center{
+	justify-content: end;
+}
+.main_main{
+    background-image: url(../img/boot_main_page.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.header_a{
+    display:block;
+    align-self: center;
+}
+.header_aa{
+    padding: 15px 5px 15px 5px;
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+}
+
+.header_a:hover{
+    background-color: white;
+    color:  black;
+}
+
+
+.header_aa_left{
+    
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 18px; 
+}
+
+.header_aa_center{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 18px; 
+}
+
+.header_aa_rigth{
+    flex-direction: row;
+    align-content: flex-end;
+
+}
+
+
+.nav_header_aa_right{
+    display: inline;
+    
+   
+    
+}
+.header_font_color{
+    font-family: sans-serif;
+    color: azure;
+    text-align: center;
+}
+
+
+aside{
+    float: left;
+    background: black;
+    display: inline;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: Opx;
+    width:25%;
+    height: auto;
+    
+}
+
+.lateral {
+  
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+}
+
+
+main{
+    /*display: inline;*/
+    width:100%;
+    /*float: center;*/
+}
+
+.contenedor_padre {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+}
+
+
+
+a{
+	/*position: absolute;*/
+	float: right;
+	padding: 5px;
+	margin-right: 20px;
+	}
+#landing_logo{
+	width: 30px;
+	height: 30px;
+}
+h1{
+	text-align: center;
+	font-weight: 100;
+	font-family: karla;
+	font-size: 66px;
+}
+h6{
+	text-align: center;
+	font-weight: 100;
+	font-family: karla;
+	font-size: 26px;
+}
+
+#objetivo{
+	text-align: center;
+	width: 50%;
+	height: 30%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+fieldset{
+	text-align: center;
+	width: 50%;
+	height: auto;
+	border-radius: 10px 10px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+#monitor{
+	
+	text-align: center;
+	width: 98%;
+	height: auto;
+/*	margin-top: 20px;*/
+	margin-left: auto;
+  	margin-right: auto;
+  }
+  #fondo_logistica{
+  	border: 1px solid #000;
+  	margin-top: 20px;
+  	width: 100%;
+	height: auto;
+  }
+ #contenedor_registro{
+ 	background-color: rgba(51, 144, 215, 0.54);
+ 	padding: 20px;
+ 	border: 1px solid #000;
+	text-align: center;
+	width: 20%;
+	height: auto;
+	border-radius: 10px 10px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+input{
+	position: relative;
+	margin-left: auto;
+  	margin-right: auto;
+    width: 100%;
+  	display: flex;
+  	flex-direction: row;
+}
+label{
+    width: 150%;
+	font-weight: 100;
+	font-family: karla;
+	font-size: 16px;
+
+}
+button{
+    width: 50%;
+	font-weight: 100;
+	font-family: karla;
+	font-size: 16px;
+}
+legend{
+	text-align: left;
+}
+#titulo_registro{
+	padding: 25px;
+	text-align: center;
+	font-weight: 100;
+	font-family: karla;
+	font-size: 28px;
+}
+#registro{
+    margin-top:inherit;
+	background-image: url("../img/fondo_registro.jpg");
+    background-size: cover;
+
+}
+.etiqueta1{
+
+	text-decoration-color: lightblue;
+}
+
+.etiqueta2{
+
+	text-decoration-color: red;
+}
+.dark{
+	background-color: black;
+	color: white;
+}
+
+
+@media (min-width: 992px) {
+	#header .header-nav-main nav > ul > li > a {
+		color: #76bd1d;
+	}
